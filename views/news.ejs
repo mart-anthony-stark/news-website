@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News - Mart Anthony Salazar</title>
+    <link rel="icon" href="/img/MartLogo.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <header class="header">
+    <h1>News Website</h1>
+    <div class="header-search">Search <input type="text" placeholder="News" id="search"></div>
+        <%- new Date().toLocaleString()  %>
+</header>
+
+    <div class="wrapper">
+        <div class="news">
+    <% articles.forEach((article, index)=>{ %>
+        <div class="box">
+        <img src=<%- article.urlToImage %> alt="">
+        <a href=<%- article.url %>>
+            <h2 class="article-title"><%- article.title %></h2>
+        </a>
+        <p class="date"><%- article.publishedAt.toLocaleString() %></p>
+        <p><%- article.description %></p>
+        </div>
+    <% }) %>    
+        </div>
+        <div class="footer">
+            <a href="#" class="top">Back to Top</a>
+            <a href="https://www.facebook.com/martanthony.abanosalazar"><h4>Mart Anthony Salazar</h4></a>
+        </div>
+    </div> 
+</body>
+</html>

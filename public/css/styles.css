@@ -1,0 +1,111 @@
+* {
+  outline: none;
+}
+
+body {
+  margin: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: #f6f6f6;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', 'sans-serif';
+}
+
+::-webkit-scrollbar {
+  width: 0.7rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0C2C52;
+  border-radius: 1rem;
+}
+
+img {
+  max-width: 100%;
+}
+
+h2 {
+  font-size: 1.6rem;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  color: #fff;
+  background-color: #0C2C52;
+  margin-bottom: 10px;
+}
+
+.header #search input[type=text] {
+  padding: 6px;
+  border: none;
+}
+
+.header #search input[type=submit] {
+  float: right;
+  padding: 6px 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.wrapper {
+  padding: 0 1rem;
+}
+
+.news {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(250px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 2rem;
+}
+
+.news .box {
+  text-decoration: none;
+  color: #080808;
+  background-color: #fff;
+  padding: 20px;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.news .box:hover {
+  -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.16), 0 3px 3px rgba(0, 0, 0, 0.23);
+          box-shadow: 0 3px 3px rgba(0, 0, 0, 0.16), 0 3px 3px rgba(0, 0, 0, 0.23);
+  background: #DCF0F7;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+@media (max-width: 445px) {
+  .header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
