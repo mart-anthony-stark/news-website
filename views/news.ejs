@@ -18,9 +18,10 @@
     <div class="wrapper">
         <div class="news">
     <% articles.forEach((article, index)=>{ %>
-        <div class="box">
-        <img src=<%- article.urlToImage %> alt="">
-        <a href=<%- article.url %>>
+        
+        <div class="box" key="<%- index %>">
+        <img src=<%- article.urlToImage %> alt="" />
+        <a href=<%- article.url %>
             <h2 class="article-title"><%- article.title %></h2>
         </a>
         <p class="date"><%- article.publishedAt.toLocaleString() %></p>
@@ -29,9 +30,14 @@
     <% }) %>    
         </div>
         <div class="footer">
-            <a href="#" class="top">Back to Top</a>
-            <a href="https://www.facebook.com/martanthony.abanosalazar"><h4>Mart Anthony Abaño Salazar</h4></a>
+        <div class="contact">
+            <h4 class="creator">Mart Anthony Salazar</h4>
+            <a href=""><i class="fa fa-github" ></i></a>
+            <a href="https://www.facebook.com/martanthony.abanosalazar"><i class="fa fa-facebook" ></i></a>
+
         </div>
-    </div> 
+            <a href="#" class="top">Back to Top</a>
+        </div>
+    </div>
 </body>
 </html>
